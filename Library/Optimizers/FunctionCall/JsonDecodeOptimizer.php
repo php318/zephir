@@ -70,7 +70,7 @@ class JsonDecodeOptimizer extends OptimizerAbstract
          */
         if (count($resolvedParams) >= 2) {
             $context->headersManager->add('kernel/operators');
-            $options = 'zephir_get_intval(' . $resolvedParams[1] . ') ';
+            $options = 'zephir_get_boolval(' . $resolvedParams[1] . ') ';
         } else {
             $options = '0 ';
         }
